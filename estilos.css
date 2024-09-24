@@ -2,27 +2,35 @@
    
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+ul.hard-skills {
+    list-style: none;  /* Remove os marcadores padrão */
     padding: 0;
-    margin: 80px 150px 60px 150px;
-    font-size: 20px;
-}
+  }
+  
+  ul.hard-skills li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  ul.hard-skills li i {
+    margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
+    color: #d4d4d4;      /* Cor personalizada para os ícones */
+    font-size: 18px;     /* Tamanho dos ícones */
+  }
 
-nav ul li a{
-    text-decoration: none;
-    color: rgb(20, 20, 20);
-    padding: 10px 20px;
-    display: block;
-    margin: 0 10px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-ul li:hover ul {
-    display: block;
-}
+  ul.soft-skills {
+    list-style: none;  /* Remove os marcadores padrão */
+    padding: 0;
+  }
+  
+  ul.soft-skills li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  ul.soft-skills li i {
+    margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
+    color: #28a745;      /* Cor personalizada para os ícones */
+    font-size: 18px;     /* Tamanho dos ícones */
+  }
+  
