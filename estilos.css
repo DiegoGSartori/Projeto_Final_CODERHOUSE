@@ -1,9 +1,23 @@
-#header {
-   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 50px 0;
+  background: linear-gradient(-45deg, rgb(15, 15, 165), #aa49ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
 }
 
 ul.hard-skills {
-    list-style: none;  /* Remove os marcadores padrão */
+    list-style: none;
     padding: 0;
   }
   
@@ -13,13 +27,13 @@ ul.hard-skills {
   }
   
   ul.hard-skills li i {
-    margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
-    color: #d4d4d4;      /* Cor personalizada para os ícones */
-    font-size: 18px;     /* Tamanho dos ícones */
+    margin-right: 10px;
+    color: #d4d4d4;
+    font-size: 18px;
   }
 
   ul.soft-skills {
-    list-style: none;  /* Remove os marcadores padrão */
+    list-style: none;
     padding: 0;
   }
   
@@ -29,8 +43,87 @@ ul.hard-skills {
   }
   
   ul.soft-skills li i {
-    margin-right: 10px;  /* Espaçamento entre o ícone e o texto */
-    color: #28a745;      /* Cor personalizada para os ícones */
-    font-size: 18px;     /* Tamanho dos ícones */
+    margin-right: 10px;
+    font-size: 18px;
   }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p, h3, li {
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: justify;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.icons i:hover {
+  color: #8a00ff;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .icons i {
+    font-size: 2rem;
+  }
+}
   
