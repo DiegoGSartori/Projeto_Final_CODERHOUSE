@@ -11,41 +11,45 @@ body {
   align-items: flex-start;
   min-height: 100vh;
   margin: 50px 0;
-  background: linear-gradient(-45deg, rgb(15, 15, 165), #aa49ff);
+  background: linear-gradient(-45deg, rgb(37, 37, 37), #afafaf);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
 }
 
-ul.hard-skills {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul.hard-skills li {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  ul.hard-skills li i {
-    margin-right: 10px;
-    color: #d4d4d4;
-    font-size: 18px;
-  }
+.container {
 
-  ul.soft-skills {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul.soft-skills li {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  ul.soft-skills li i {
-    margin-right: 10px;
-    font-size: 18px;
-  }
+}
+
+ul.hard-skills {
+  list-style: none;
+  padding: 0;
+}
+
+ul.hard-skills li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+ul.hard-skills li i {
+  margin-right: 10px;
+  color: #d4d4d4;
+  font-size: 18px;
+}
+
+ul.soft-skills {
+  list-style: none;
+  padding: 0;
+}
+
+ul.soft-skills li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+ul.soft-skills li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
 
 @keyframes gradientAnimation {
   0% {
@@ -77,20 +81,24 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 28.8px;
 }
 
-p, h3, li {
-  font-size: 1.2rem;
+h3, li {
+  font-size: 19.2px;
   color: #eee;
-  text-align: justify;
+  text-align: center;
   max-width: 800px;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+p {
+
 }
 
 .icons {
@@ -100,7 +108,7 @@ p, h3, li {
 }
 
 .icons i {
-  font-size: 2.5rem;
+  font-size: 40px;
   color: #fff;
   transition: color 0.3s ease;
 }
@@ -111,19 +119,18 @@ p, h3, li {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .icons i {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
-  
