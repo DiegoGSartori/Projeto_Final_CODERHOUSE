@@ -14,39 +14,58 @@
   text-align: center;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 5vw;
+  padding: 5vw;
   box-sizing: border-box;
 }
 
-ul.hard-skills {
+.competencias {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.competencias > div {
+  flex: 1;
+  min-width: 300px;
+  background-color: #e0e0e0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.hard-skills,
+.soft-skills {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  flex-grow: 1;
 }
 
-ul.hard-skills li {
-  margin-bottom: 10px;
+.hard-skills li,
+.soft-skills li {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
 }
 
-ul.hard-skills li i {
+.hard-skills li i,
+.soft-skills li i {
   margin-right: 10px;
-  color: #d4d4d4;
-  font-size: 18px;
-}
-
-ul.soft-skills {
-  list-style: none;
-  padding: 0;
-}
-
-ul.soft-skills li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-ul.soft-skills li i {
-  margin-right: 10px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 @keyframes gradientAnimation {
@@ -75,36 +94,15 @@ h2 {
   font-size: 28.8px;
 }
 
-h3, li {
-  font-size: 19.2px;
-  color: #eee;
-  text-align: center;
-  max-width: 800px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+h3 {
+  font-size: 20px;
 }
 
 p {
 text-align: left;
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.icons i {
-  font-size: 40px;
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-.icons i:hover {
-  color: #8a00ff;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 32px;
   }
@@ -117,7 +115,11 @@ text-align: left;
     font-size: 16px;
   }
 
+  .competencias {
+    flex-direction: column;
+  }
+
   .icons i {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
