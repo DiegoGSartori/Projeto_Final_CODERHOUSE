@@ -131,7 +131,7 @@ header nav .nav-link:hover {
 .skill-bubble {
   background-color: var(--secondary-color);
   color: white;
-  padding: 0.5rem 0.5rem;
+  padding: 1.0rem 1.0rem;
   border-radius: 20px;
   display: inline-block;
   transition: background-color 0.3s ease;
