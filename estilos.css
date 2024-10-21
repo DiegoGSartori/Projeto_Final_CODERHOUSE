@@ -11,6 +11,10 @@
   transition: transform 0.2s ease-in-out;
 }
 
+a .nav-link {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .skill-bubble:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
